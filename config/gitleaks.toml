@@ -5,6 +5,27 @@ title = "gitleaks config"
     description = "AWS Access Key"
     regex = '''(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}'''
     tags = ["key", "AWS"]
+    
+[[rules]]
+    description = "Authorization Baerer"
+    regex = '''Bearer\s[\d|a-f]{8}-([\d|a-f]{4}-){3}[\d|a-f]{12}'''
+    tags = ["key", "Bearer"]
+    
+[[rules]]
+    description = "Password"
+    regex = '''pass.*'''
+    tags = ["key", "Password"]
+
+[[rules]]
+    description = "Password 2"
+    regex = '''password.*'''
+    tags = ["key", "Password 2"]
+
+[[rules]]
+    description = "Password 3"
+    regex = '''login.*'''
+    tags = ["key", "Login"]
+
 
 [[rules]]
     description = "AWS Secret Key"
