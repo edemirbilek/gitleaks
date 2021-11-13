@@ -1,0 +1,4 @@
+Password=123
+jdc:username=password
+Authorization: Asdsdaqowqeodsaıpod
+pass=1245
